@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Flex, Text } from '@chakra-ui/react'
 import { ArrowDownIcon, LogoIcon } from '@/utils/icons'
 import ShoppingCart from './ShoppingCart'
+import ButtonHamburguer from './ButtonHamburguer'
 
 type Props = {}
 
@@ -9,7 +10,6 @@ const Header = (props: Props) => {
   return (
     <Box 
     as="header"
-    h="120px"
     p="2"
     >
         <Box 
@@ -40,7 +40,7 @@ const Header = (props: Props) => {
             alignItems="center"
             gap="8"
             >
-               
+              
                <Flex
                as="li"
                gap="4"
@@ -62,7 +62,7 @@ const Header = (props: Props) => {
                </Flex>
 
                 <ShoppingCart />
-            
+                <ButtonHamburguer />
             </Flex>     
         </Box>
     </Box>
