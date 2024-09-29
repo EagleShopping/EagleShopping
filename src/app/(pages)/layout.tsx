@@ -8,13 +8,10 @@ type Props = {
 
 const layout = (props: Props) => {
   return (
-    <Box
-    h="100vh"
-    minW="100vw"
-    >
+    <Box>
          <Header />
          <Box
-         px="4"
+         px={{base: '20px', md: '75px'}}
          >
         {props.children}
          </Box>

@@ -1,11 +1,12 @@
-import { Box, Heading } from "@chakra-ui/react";
-import Header from "./components/Header";
+import { Box } from "@chakra-ui/react";
+import ShowCaseHome from "./components/ShowCaseHome";
 
 export default function Home() {
   
   return (
-   <Box>
-    aaaaaaaaaaaaaaaa
+   <Box 
+   >
+    <ShowCaseHome />
    </Box>
   );
 }
