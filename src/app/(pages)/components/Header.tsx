@@ -33,7 +33,8 @@ const Header = (props: Props) => {
                <Text
                fontWeight="bold"
                >EAGLESHOP</Text>
-            </Flex>       
+            </Flex>
+                   
             <Flex
             as='ul'
             justifyContent="center"
