@@ -1,4 +1,10 @@
 import { TiArrowSortedDown } from "react-icons/ti";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
+
+
 
 export const LogoIcon = () => { 
   return (
@@ -60,4 +66,34 @@ export const ArrowDownIcon = () => {
     <TiArrowSortedDown />
   )
 
+}
+
+
+
+// Social
+
+export const FacebookIcon = () => {
+  return (
+    <FaFacebookSquare />
+  )
+}
+
+
+export const TwitterIcon = () => {
+  return (
+    <FaXTwitter/>
+  )
+}
+
+export const InstagramIcon = () => {
+  return (
+    <FaInstagram />
+
+  )
+}
+
+export const BlueskyLogo = () => {
+  return (
+    <FaBluesky/>
+  )
 }

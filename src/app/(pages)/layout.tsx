@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React, { Children } from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 type Props = {
     children?: any
@@ -15,6 +16,7 @@ const layout = (props: Props) => {
          >
         {props.children}
          </Box>
+         <Footer/>
     </Box>
   )
 }
