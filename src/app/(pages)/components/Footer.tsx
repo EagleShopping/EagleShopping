@@ -1,5 +1,6 @@
-import { BlueskyLogo, EmailIcon, FacebookIcon, InstagramIcon, LogoIcon, TwitterIcon } from '@/utils/icons'
-import { Box, color, Flex, Text } from '@chakra-ui/react'
+import { BlueskyLogo, FacebookIcon, InstagramIcon, LogoIcon, TwitterIcon } from '@/utils/icons'
+import { Box, Flex, Text } from '@chakra-ui/react'
+
 
 
 type FooterProps = {}

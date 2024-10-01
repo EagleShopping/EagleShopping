@@ -51,6 +51,7 @@ const ShowCaseHome = () => {
     alt="playing golf"
     />  
     </Box>
+    
     <Box
     position='relative'
     width='100%'
