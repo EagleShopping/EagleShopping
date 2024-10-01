@@ -1,12 +1,15 @@
 import { Box, Flex, background } from '@chakra-ui/react'
 import React from 'react'
-import { AllCategory } from '@/mockdata'
+import { AllcategoryMock } from '@/mockdata'
+import { useCategory } from './hooks/useCategory'
 
 type CategoryShop = {
-
+selectCategory: string
 }
 
-const CategoryShop = (props: CategoryShop) => {
+const CategoryShop = ({selectCategory}: CategoryShop) => {
+
+  const {categoryActual} = useCategory()
 
   return (
     <Flex
@@ -18,12 +21,13 @@ const CategoryShop = (props: CategoryShop) => {
     borderRadius="24px"
     border="1px solid"
     borderColor="gray.900"
+    overflowX="auto"
     >
-        {AllCategory.map((category) => (
+        {AllcategoryMock.map((category) => (
             <Box 
             padding="4px"
             border="1px solid"
-            borderColor="gray.900"
+            borderColor={categoryActual(category.name,selectCategory) ? 'transparent' : 'gray.900'}
             minW="123px"
             display="flex"
             justifyContent="center"
@@ -32,10 +36,11 @@ const CategoryShop = (props: CategoryShop) => {
             cursor="pointer"
             _hover={
                 {
-                background:"gray.300",
+                background:"gray.400",
                 border:"none"
                 }
             }
+            bg={categoryActual(category.name,selectCategory)  ? 'gray.300' : 'transparent'}
             key={category.id}
             > 
                 {category.name}

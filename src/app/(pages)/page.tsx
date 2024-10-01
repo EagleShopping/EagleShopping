@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import ShowCaseHome from "./components/ShowCaseHome";
-import CategoryShop from "./(shared)/CategoryShop";
+import ShoppingSection from "./(shared)/ShoppingSection";
 
 export default function Home() {
   
@@ -8,11 +8,7 @@ export default function Home() {
    <Box 
    >
     <ShowCaseHome />
-    <Box
-    mb="20px"
-    >
-      <CategoryShop />
-    </Box>
+    <ShoppingSection />
    </Box>
   );
 }
