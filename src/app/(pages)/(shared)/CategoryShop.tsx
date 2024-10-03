@@ -1,7 +1,7 @@
 import { Box, Flex, background } from '@chakra-ui/react'
 import React from 'react'
 import { AllcategoryMock } from '@/mockdata'
-import { useCategory } from './hooks/useCategory'
+import { useShopping } from './hooks/useShopping'
 
 type CategoryShop = {
 selectCategory: string
@@ -9,7 +9,7 @@ selectCategory: string
 
 const CategoryShop = ({selectCategory}: CategoryShop) => {
 
-  const {categoryActual} = useCategory()
+  const {categoryActual} = useShopping()
 
   return (
     <Flex
