@@ -27,7 +27,7 @@ const ShoppingSection = (props: Props) => {
 
         <Flex 
         my="20px"
-        gap={{base: '10px', md: '20px', lg: '30px'}}
+        gap={{base: '10px', md: '20px', lg: '30px'}}       
         justifyContent="center"
         alignItems="center"
         flexWrap="wrap"
@@ -36,6 +36,7 @@ const ShoppingSection = (props: Props) => {
            <CategoryPhotos 
            products={products} 
            onBuyProduct={(Product) => console.log(Product)}
+           onViewProduct={(Product) => console.log(Product)}
            key={products.id}
            />
           ))}
