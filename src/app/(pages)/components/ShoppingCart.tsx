@@ -2,9 +2,7 @@ import { Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 import { ShoppingCartIcon } from '@/utils/icons'
 
-type Props = {}
-
-const ShoppingCart = (props: Props) => {
+const ShoppingCart = () => {
   return (
     <Flex>
         <ShoppingCartIcon />

@@ -1,17 +1,14 @@
 import { BlueskyLogo, FacebookIcon, InstagramIcon, LogoIcon, TwitterIcon } from '@/utils/icons'
 import { Box, Flex, Text } from '@chakra-ui/react'
 
-
-
-type FooterProps = {}
-
-
-export default function Footer(props: FooterProps){
+export default function Footer(){
     return(
         <Box
         display='flex'
+        bottom='0'
         as='footer'
         boxShadow="-4px -4px 10px rgba(0, 0, 0, 0.1)"
+        bg="gray.50"
         w='full'
         h='115px'
         >
