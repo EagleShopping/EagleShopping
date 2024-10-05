@@ -12,7 +12,9 @@ type IcategoryPhotos = {
 };
 
 const CategoryPhotos = ({ products, onBuyProduct, onViewProduct }: IcategoryPhotos) => {
+
   const { ratingShopping } = useShopping();
+
   return (
     <Flex
       flexDirection="column"
@@ -23,6 +25,7 @@ const CategoryPhotos = ({ products, onBuyProduct, onViewProduct }: IcategoryPhot
       bg="gray.100"
       boxShadow="0px 0px 10px rgba(0, 0, 0, 0.3)"
       gap="2px"
+      maxW="350px"
       flex={{ base: "column", md: "1" }}
     >
 
