@@ -5,16 +5,17 @@ import { useShopping } from './hooks/useShopping'
 
 type CategoryShop = {
 selectCategory: string
+SetselectCategory: (category: string) => void
 }
 
-const CategoryShop = ({selectCategory}: CategoryShop) => {
+const CategoryShop = ({selectCategory, SetselectCategory}: CategoryShop) => {
 
   const {categoryActual} = useShopping()
 
   return (
     <Flex
     w="100%"
-    justifyContent="center"
+    justifyContent={{base: "start", lg: "center"}}
     alignItems="center"
     gap="23px"
     padding="20px"
@@ -33,7 +34,7 @@ const CategoryShop = ({selectCategory}: CategoryShop) => {
             justifyContent="center"
             alignItems="center"
             borderRadius="24px"
-            cursor="pointer"
+            cursor="pointer"     
             _hover={
                 {
                 background:"gray.400",
@@ -42,6 +43,7 @@ const CategoryShop = ({selectCategory}: CategoryShop) => {
             }
             bg={categoryActual(category.name,selectCategory)  ? 'gray.300' : 'transparent'}
             key={category.id}
+            onClick={() => SetselectCategory(category.name)}
             > 
                 {category.name}
             </Box>

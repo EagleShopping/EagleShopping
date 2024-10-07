@@ -4,5 +4,6 @@ export interface Iproducts {
     preco: number,
     discount: number,
     category: string,
-    imagePreview: string
+    imagePreview: string,
+    quantity: number,
 }
