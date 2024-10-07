@@ -9,10 +9,14 @@ type Props = {}
 const Header = (props: Props) => {
   return (
     <Box 
+    position="sticky"
+    zIndex={400}
     as="header"
+    top="0"
     p="2"
     >
         <Box 
+        bg="gray.50"
         border="1px solid"
         borderColor="black.300"
         borderRadius="53px"

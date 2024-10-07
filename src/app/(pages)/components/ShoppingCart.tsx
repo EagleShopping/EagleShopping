@@ -1,10 +1,19 @@
+"use client"
+
 import { Box, Flex } from '@chakra-ui/react'
 import React from 'react'
 import { ShoppingCartIcon } from '@/utils/icons'
-
+import CartExebition from './CartExebition'
+import { useSelector } from 'react-redux'
+import { selectProductsCount } from '@/redux/products/cartSelection'
 const ShoppingCart = () => {
+
+  const productCounter = useSelector(selectProductsCount)
+
   return (
-    <Flex>
+    <Flex
+    position="relative"
+    >
         <ShoppingCartIcon />
         <Box
         bg="gray.900"
@@ -17,8 +26,9 @@ const ShoppingCart = () => {
         justifyContent="center"
         fontWeight="medium"
         >
-            0
+            {productCounter}
         </Box>
+        <CartExebition />
     </Flex>
   )
 }
